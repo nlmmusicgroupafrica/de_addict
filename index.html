@@ -392,6 +392,42 @@
       margin-top: 30px;
     }
     
+    /* Platform links (for Music page) */
+    .platform-links {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 0 0 50px 0;
+      flex-wrap: wrap;
+    }
+    
+    .platform-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      color: var(--light-text);
+      transition: var(--transition);
+      font-size: 0.9rem;
+    }
+    
+    .platform-link i {
+      font-size: 32px;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: var(--transition);
+    }
+    
+    .platform-link:hover {
+      transform: translateY(-5px);
+      color: var(--accent);
+    }
+    
+    .platform-link:hover i {
+      filter: drop-shadow(0 0 8px var(--accent));
+    }
+    
     /* NLM Family Section (simplified) */
     .nlm-family {
       text-align: center;
@@ -675,6 +711,26 @@
       <div class="container">
         <h2 class="section-title">Music</h2>
         
+        <!-- Platform links added here -->
+        <div class="platform-links">
+          <a href="https://www.traxsource.com/artist/595542/de-addict" class="platform-link" target="_blank">
+            <i class="fas fa-store-alt"></i>
+            <span>Traxsource</span>
+          </a>
+          <a href="https://www.beatport.com/artist/de_addict/954765" class="platform-link" target="_blank">
+            <i class="fas fa-headphones"></i>
+            <span>Beatport</span>
+          </a>
+          <a href="https://open.spotify.com/artist/4zWn46N1rFEGbNS57thxmq?si=Qk__I8DfR7G50qxzgQdkeA" class="platform-link" target="_blank">
+            <i class="fab fa-spotify"></i>
+            <span>Spotify</span>
+          </a>
+          <a href="https://music.apple.com/us/artist/de-addict/1549920658" class="platform-link" target="_blank">
+            <i class="fab fa-apple"></i>
+            <span>Apple Music</span>
+          </a>
+        </div>
+        
         <div class="release-card">
           <img src="3.png" alt="Midnight Logic EP" class="release-image"> <!-- updated to 3.png -->
           <div class="release-info">
@@ -777,9 +833,9 @@
       <div class="icon-only">
         <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="#" target="https://youtube.com/@de_addict?si=ZYwU0Wj7-AG5kHT2"><i class="fab fa-youtube"></i></a>
-        <a href="#" target="https://open.spotify.com/artist/4zWn46N1rFEGbNS57thxmq?si=Qk__I8DfR7G50qxzgQdkeA"><i class="fab fa-spotify"></i></a>
-        <a href="#" target="https://music.apple.com/us/artist/de-addict/1549920658"><i class="fab fa-apple"></i></a>
+        <a href="https://youtube.com/@de_addict?si=ZYwU0Wj7-AG5kHT2" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://open.spotify.com/artist/4zWn46N1rFEGbNS57thxmq?si=Qk__I8DfR7G50qxzgQdkeA" target="_blank"><i class="fab fa-spotify"></i></a>
+        <a href="https://music.apple.com/us/artist/de-addict/1549920658" target="_blank"><i class="fab fa-apple"></i></a>
       </div>
       
       <!-- MWM Technologies credit -->
