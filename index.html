@@ -3,27 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>T.fly deDeejay</title>
+  <title>De_Addict</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <style>
+    /* Deep Tech / Deep House colour palette – dark, hypnotic, with electric accents */
     :root {
-      --primary: #0A0A0A;
-      --secondary: #FF6B35;
-      --accent: #6A5ACD;
-      --sunset-orange: #FF8C00;
-      --sunset-pink: #FF1493;
-      --ocean-purple: #9370DB;
-      --ocean-blue: #4169E1;
+      --primary: #0B0C10;          /* deep black-blue */
+      --secondary: #1F2833;        /* dark steel */
+      --accent: #66FCF1;            /* electric cyan */
+      --accent-glow: #45A29E;       /* muted teal */
+      --deep-purple: #6A0DAD;       /* subtle purple accent */
       --text: #FFFFFF;
-      --light-text: #BBBBBB;
-      --bg: #0A0A0A;
-      --card-bg: rgba(20, 20, 20, 0.8);
-      --border: rgba(255, 140, 0, 0.3);
+      --light-text: #C5C6C7;
+      --bg: #0B0C10;
+      --card-bg: rgba(31, 40, 51, 0.85);
+      --border: rgba(102, 252, 241, 0.2);
       --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      --gradient: linear-gradient(135deg, var(--sunset-orange), var(--sunset-pink), var(--ocean-purple), var(--ocean-blue));
-      --sunset-glow: 0 0 5px rgba(255, 140, 0, 0.5), 0 0 10px rgba(255, 140, 0, 0.4), 0 0 15px rgba(255, 20, 147, 0.3);
-      --ocean-glow: 0 0 5px rgba(65, 105, 225, 0.5), 0 0 10px rgba(65, 105, 225, 0.4), 0 0 15px rgba(147, 112, 219, 0.3);
+      --gradient: linear-gradient(135deg, #66FCF1, #6A0DAD);
+      --glow: 0 0 5px rgba(102, 252, 241, 0.5), 0 0 10px rgba(102, 252, 241, 0.4), 0 0 15px rgba(106, 13, 173, 0.3);
     }
     
     * {
@@ -39,8 +37,8 @@
       line-height: 1.6;
       overflow-x: hidden;
       background-image: 
-        radial-gradient(circle at 20% 30%, rgba(255, 140, 0, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(65, 105, 225, 0.15) 0%, transparent 40%);
+        radial-gradient(circle at 20% 30%, rgba(102, 252, 241, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(106, 13, 173, 0.1) 0%, transparent 40%);
     }
     
     a {
@@ -68,12 +66,12 @@
       top: 0;
       left: 0;
       width: 100%;
-      background: rgba(10, 10, 10, 0.9);
+      background: rgba(11, 12, 16, 0.9);
       backdrop-filter: blur(10px);
       z-index: 1000;
       padding: 15px 0;
       border-bottom: 1px solid var(--border);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     }
     
     .header-container {
@@ -89,7 +87,7 @@
       font-weight: 900;
       font-size: 1.8rem;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
       background: var(--gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -99,18 +97,11 @@
     .logo img {
       height: 40px;
       transition: var(--transition);
-      filter: drop-shadow(0 0 5px rgba(255, 140, 0, 0.5));
+      filter: drop-shadow(0 0 5px rgba(102, 252, 241, 0.5));
     }
     
     .logo:hover img {
-      transform: rotate(10deg) scale(1.1);
-    }
-    
-    .logo-full-name {
-      font-size: 1.2rem;
-      margin-left: 5px;
-      color: var(--text);
-      font-weight: 600;
+      transform: rotate(5deg) scale(1.1);
     }
     
     nav ul {
@@ -152,9 +143,7 @@
     .hero {
       padding: 180px 0 100px;
       text-align: center;
-      background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9));
-      background-size: cover;
-      background-position: center;
+      background: linear-gradient(rgba(11, 12, 16, 0.95), rgba(11, 12, 16, 0.95));
       position: relative;
       overflow: hidden;
     }
@@ -167,8 +156,8 @@
       width: 100%;
       height: 100%;
       background: 
-        radial-gradient(circle at 20% 30%, rgba(255, 140, 0, 0.2) 0%, transparent 30%),
-        radial-gradient(circle at 80% 70%, rgba(65, 105, 225, 0.2) 0%, transparent 30%);
+        radial-gradient(circle at 20% 30%, rgba(102, 252, 241, 0.15) 0%, transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(106, 13, 173, 0.15) 0%, transparent 30%);
       z-index: 1;
     }
     
@@ -194,11 +183,8 @@
     .hero-image img {
       width: 100%;
       border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 140, 0, 0.3);
-      border: 3px solid transparent;
-      background: var(--gradient) padding-box, var(--gradient) border-box;
-      background-origin: border-box;
-      background-clip: padding-box, border-box;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 30px rgba(102, 252, 241, 0.3);
+      border: 2px solid rgba(102, 252, 241, 0.3);
     }
     
     .hero-text {
@@ -212,17 +198,17 @@
       margin-bottom: 20px;
       font-weight: 900;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
       background: var(--gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
       animation: fadeInDown 1s ease;
     }
     
     .hero p {
       max-width: 700px;
-      margin: 0 auto 30px;
+      margin: 0 0 30px;
       color: var(--light-text);
       font-size: 1.1rem;
       animation: fadeIn 1.5s ease;
@@ -233,7 +219,7 @@
       padding: 15px 35px;
       border-radius: 50px;
       font-weight: 700;
-      margin: 0 10px;
+      margin: 0 10px 0 0;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 0.9rem;
@@ -264,12 +250,12 @@
     .btn-primary {
       background: var(--gradient);
       color: white;
-      box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+      box-shadow: 0 5px 15px rgba(102, 252, 241, 0.3);
     }
     
     .btn-primary:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(255, 140, 0, 0.4), var(--sunset-glow);
+      box-shadow: 0 10px 20px rgba(102, 252, 241, 0.4), var(--glow);
       color: white;
     }
     
@@ -283,7 +269,7 @@
       background: var(--accent);
       color: var(--primary);
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(65, 105, 225, 0.3), var(--ocean-glow);
+      box-shadow: 0 10px 20px rgba(102, 252, 241, 0.3);
     }
     
     /* Sections */
@@ -335,14 +321,14 @@
       background: var(--card-bg);
       border-radius: 15px;
       transition: var(--transition);
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
       border: 1px solid var(--border);
       backdrop-filter: blur(10px);
     }
     
     .about-card:hover {
       transform: translateY(-10px) scale(1.03);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 140, 0, 0.2);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(102, 252, 241, 0.2);
     }
     
     .about-card img {
@@ -351,288 +337,7 @@
       border-radius: 50%;
       object-fit: cover;
       margin: 0 auto 20px;
-      border: 3px solid transparent;
-      background: var(--gradient) padding-box, var(--gradient) border-box;
-      background-origin: border-box;
-      background-clip: padding-box, border-box;
-    }
-    
-    .mother-tribute {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
-      margin: 60px auto;
-      max-width: 900px;
-      background: var(--card-bg);
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(10px);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .mother-tribute::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at top right, rgba(255, 140, 0, 0.1) 0%, transparent 70%);
-      z-index: 0;
-    }
-    
-    .mother-tribute img {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid transparent;
-      background: var(--gradient) padding-box, var(--gradient) border-box;
-      background-origin: border-box;
-      background-clip: padding-box, border-box;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-      position: relative;
-      z-index: 1;
-      transition: var(--transition);
-    }
-    
-    .mother-tribute:hover img {
-      transform: scale(1.05);
-      box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
-    }
-    
-    .mother-tribute-content {
-      flex: 1;
-      position: relative;
-      z-index: 1;
-    }
-    
-    .mother-tribute p {
-      font-size: 1.8rem;
-      color: var(--sunset-orange);
-      font-weight: 800;
-      text-align: center;
-      margin-bottom: 15px;
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    }
-    
-    .mother-tribute .title {
-      font-size: 1.2rem;
-      color: var(--ocean-blue);
-      text-align: center;
-      font-weight: 600;
-    }
-    
-    /* NLM Family Section */
-    .nlm-family {
-      text-align: center;
-      padding: 80px 0;
-      background: var(--card-bg);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .nlm-family::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at center, rgba(255, 140, 0, 0.1) 0%, transparent 70%);
-      z-index: 0;
-    }
-    
-    .nlm-family h2 {
-      font-size: 3rem;
-      margin-bottom: 30px;
-      font-weight: 900;
-      text-transform: uppercase;
-      background: var(--gradient);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      position: relative;
-      z-index: 1;
-    }
-    
-    .nlm-family p {
-      max-width: 800px;
-      margin: 0 auto 40px;
-      font-size: 1.2rem;
-      color: var(--light-text);
-      position: relative;
-      z-index: 1;
-    }
-    
-    .family-members {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-      margin-top: 40px;
-      position: relative;
-      z-index: 1;
-    }
-    
-    .family-member {
-      width: 200px;
-      text-align: center;
-    }
-    
-    .family-member img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 0 auto 20px;
-      border: 3px solid transparent;
-      background: var(--gradient) padding-box, var(--gradient) border-box;
-      background-origin: border-box;
-      background-clip: padding-box, border-box;
-      transition: var(--transition);
-    }
-    
-    .family-member:hover img {
-      transform: scale(1.1);
-      box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
-    }
-    
-    .family-member h3 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: var(--ocean-blue);
-    }
-    
-    .family-member p {
-      color: var(--light-text);
-      font-size: 0.9rem;
-    }
-    
-    /* Artists Section */
-    .artists-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 40px;
-    }
-    
-    .artist-card {
-      width: 280px;
-      background: var(--card-bg);
-      border-radius: 15px;
-      overflow: hidden;
-      transition: var(--transition);
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(10px);
-      position: relative;
-    }
-    
-    .artist-card:hover {
-      transform: translateY(-10px) scale(1.03);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(65, 105, 225, 0.2);
-    }
-    
-    .artist-image-container {
-      position: relative;
-      overflow: hidden;
-      height: 350px;
-    }
-    
-    .artist-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: var(--transition);
-    }
-    
-    .artist-card:hover .artist-image {
-      transform: scale(1.1);
-    }
-    
-    .artist-social {
-      position: absolute;
-      bottom: 20px;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      opacity: 0;
-      transition: var(--transition);
-    }
-    
-    .artist-card:hover .artist-social {
-      opacity: 1;
-    }
-    
-    .artist-social a {
-      width: 40px;
-      height: 40px;
-      background: var(--gradient);
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: var(--transition);
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    }
-    
-    .artist-social a:hover {
-      transform: translateY(-5px) scale(1.1);
-      box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
-    }
-    
-    .artist-info {
-      padding: 25px;
-      text-align: center;
-    }
-    
-    .artist-name {
-      font-size: 1.5rem;
-      font-weight: 800;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      background: var(--gradient);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      position: relative;
-      display: inline-block;
-    }
-    
-    .artist-name::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 40px;
-      height: 3px;
-      background: var(--gradient);
-      border-radius: 2px;
-    }
-    
-    .artist-bio {
-      color: var(--light-text);
-      line-height: 1.7;
-      margin-bottom: 15px;
-    }
-    
-    .artist-genre {
-      display: inline-block;
-      padding: 5px 15px;
-      background: rgba(65, 105, 225, 0.1);
-      color: var(--accent);
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      border: 1px solid rgba(65, 105, 225, 0.3);
+      border: 3px solid rgba(102, 252, 241, 0.5);
     }
     
     /* Releases Section */
@@ -643,7 +348,7 @@
       border-radius: 15px;
       overflow: hidden;
       display: flex;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
       transition: var(--transition);
       border: 1px solid var(--border);
       backdrop-filter: blur(10px);
@@ -651,7 +356,7 @@
     
     .release-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 140, 0, 0.2);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(102, 252, 241, 0.2);
     }
     
     .release-image {
@@ -687,48 +392,115 @@
       margin-top: 30px;
     }
     
-    /* Footer */
-    footer {
-      background: rgba(10, 10, 10, 0.95);
-      color: var(--text);
-      padding: 60px 0 30px;
+    /* NLM Family Section (simplified) */
+    .nlm-family {
       text-align: center;
+      padding: 80px 0;
+      background: var(--card-bg);
       position: relative;
-      border-top: 1px solid var(--border);
+      overflow: hidden;
     }
     
-    footer::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background: var(--gradient);
-    }
-    
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin: 30px 0;
-    }
-    
-    .social-links a {
-      color: var(--light-text);
-      font-weight: 600;
+    .nlm-family h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      font-weight: 900;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 0.9rem;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .mother-tribute {
       display: flex;
       align-items: center;
-      gap: 8px;
-      transition: var(--transition);
+      justify-content: center;
+      gap: 40px;
+      margin: 40px auto;
+      max-width: 900px;
+      background: rgba(11, 12, 16, 0.7);
+      padding: 40px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
     }
     
-    .social-links a:hover {
+    .mother-tribute img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+    }
+    
+    .mother-tribute p {
+      font-size: 1.8rem;
       color: var(--accent);
-      transform: translateY(-3px);
+      font-weight: 800;
+    }
+    
+    .mother-tribute .title {
+      font-size: 1.2rem;
+      color: var(--light-text);
+    }
+    
+    /* Bookings / Contact */
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 40px 0 20px;
+    }
+    
+    .contact-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .contact-icon a {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient);
+      color: white;
+      font-size: 30px;
+      transition: var(--transition);
+      box-shadow: 0 5px 15px rgba(102, 252, 241, 0.3);
+    }
+    
+    .contact-icon a:hover {
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 8px 20px rgba(102, 252, 241, 0.5);
+    }
+    
+    .contact-icon span {
+      color: var(--light-text);
+      font-size: 0.9rem;
+    }
+    
+    .contact-details {
+      margin: 30px 0 10px;
+      font-size: 1.1rem;
+      color: var(--light-text);
+    }
+    .contact-details p {
+      margin: 8px 0;
+    }
+    .contact-details i {
+      color: var(--accent);
+      width: 30px;
+    }
+    
+    /* Footer */
+    footer {
+      background: rgba(11, 12, 16, 0.95);
+      padding: 60px 0 30px;
+      text-align: center;
+      border-top: 1px solid var(--border);
     }
     
     .footer-links {
@@ -750,214 +522,6 @@
       transform: translateY(-3px);
     }
     
-    .email-link {
-      word-break: break-all;
-      color: var(--accent);
-      font-weight: 600;
-    }
-    
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-    
-    /* Responsive */
-    @media (max-width: 992px) {
-      .release-card {
-        flex-direction: column;
-      }
-      
-      .release-image {
-        width: 100%;
-        height: 300px;
-      }
-      
-      .hero-content {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .hero-text {
-        text-align: center;
-      }
-    }
-    
-    @media (max-width: 768px) {
-      .header-container {
-        flex-direction: column;
-        gap: 20px;
-      }
-      
-      nav ul {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      
-      .hero {
-        padding: 150px 0 80px;
-      }
-      
-      .hero h1 {
-        font-size: 2.5rem;
-      }
-      
-      .section {
-        padding: 80px 0;
-      }
-      
-      .about-card {
-        min-width: 100%;
-      }
-      
-      .mother-tribute {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .logo-full-name {
-        display: none;
-      }
-      
-      .nlm-family h2 {
-        font-size: 2rem;
-      }
-    }
-    
-    /* Floating elements animation */
-    .floating {
-      animation: float 6s ease-in-out infinite;
-    }
-    
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-15px); }
-      100% { transform: translateY(0px); }
-    }
-    
-    /* Page content styles */
-    .page-content {
-      display: none;
-      animation: fadeIn 0.5s ease;
-    }
-    
-    .page-content.active {
-      display: block;
-    }
-    
-    /* Music Platforms Section */
-    .music-platforms {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin: 40px 0;
-      flex-wrap: wrap;
-    }
-    
-    .platform-card {
-      background: var(--card-bg);
-      border-radius: 15px;
-      padding: 25px;
-      text-align: center;
-      width: 200px;
-      transition: var(--transition);
-      border: 1px solid var(--border);
-      backdrop-filter: blur(10px);
-    }
-    
-    .platform-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    }
-    
-    .platform-icon {
-      font-size: 40px;
-      margin-bottom: 15px;
-      color: var(--accent);
-    }
-    
-    .platform-name {
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: var(--text);
-    }
-    
-    .platform-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: var(--gradient);
-      color: white;
-      border-radius: 25px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      transition: var(--transition);
-    }
-    
-    .platform-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
-    }
-    
-    /* Contact Icons */
-    .contact-icons {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin: 40px 0;
-    }
-    
-    .contact-icon {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      transition: var(--transition);
-    }
-    
-    .contact-icon a {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--gradient);
-      color: white;
-      font-size: 30px;
-      transition: var(--transition);
-      box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
-    }
-    
-    .contact-icon a:hover {
-      transform: translateY(-5px) scale(1.1);
-      box-shadow: 0 8px 20px rgba(255, 140, 0, 0.5);
-    }
-    
-    .contact-icon span {
-      color: var(--light-text);
-      font-size: 0.9rem;
-      text-align: center;
-    }
-    
-    /* UPDATED Social Icons Only */
     .icon-only {
       display: flex;
       justify-content: center;
@@ -972,54 +536,67 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.05);
       color: var(--text);
       font-size: 20px;
       transition: var(--transition);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.1);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .icon-only a::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: var(--gradient);
-      opacity: 0;
-      transition: var(--transition);
-      z-index: -1;
     }
     
     .icon-only a:hover {
       transform: translateY(-5px) scale(1.1);
+      background: var(--gradient);
       color: white;
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 15px rgba(102, 252, 241, 0.3);
     }
     
-    .icon-only a:hover::before {
-      opacity: 1;
+    .mwm-credit {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: var(--light-text);
+    }
+    .mwm-credit a {
+      color: var(--accent);
+      font-weight: 600;
+      border-bottom: 1px dotted var(--accent);
+    }
+    .mwm-credit a:hover {
+      color: white;
     }
     
-    .icon-only a:nth-child(1):hover { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-    .icon-only a:nth-child(2):hover { background: #1877F2; }
-    .icon-only a:nth-child(3):hover { background: #FF0000; }
-    .icon-only a:nth-child(4):hover { background: #000000; }
-    .icon-only a:nth-child(5):hover { background: #0055ff; }
-    .icon-only a:nth-child(6):hover { background: #2DAAE1; }
-    .icon-only a:nth-child(7):hover { background: linear-gradient(45deg, #8a2387, #f27121, #e94057); }
+    /* Animations */
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-15px); } 100% { transform: translateY(0px); } }
+    
+    /* Responsive */
+    @media (max-width: 992px) {
+      .release-card { flex-direction: column; }
+      .release-image { width: 100%; height: auto; }
+      .hero-content { flex-direction: column; text-align: center; }
+      .hero-text { text-align: center; }
+      .hero h1 { font-size: 3rem; }
+    }
+    
+    @media (max-width: 768px) {
+      .header-container { flex-direction: column; gap: 20px; }
+      nav ul { gap: 15px; flex-wrap: wrap; justify-content: center; }
+      .hero { padding: 150px 0 80px; }
+      .section { padding: 80px 0; }
+      .mother-tribute { flex-direction: column; }
+    }
+    
+    /* Page content */
+    .page-content { display: none; animation: fadeIn 0.5s ease; }
+    .page-content.active { display: block; }
   </style>
 </head>
 <body>
   <header>
     <div class="container header-container">
       <a href="#" class="logo" onclick="showPage('home')">
-        <img src="logo.png" alt="T.fly deDeejay">
-        <span>T.fly deDeejay</span>
+        <img src="logo.png" alt="De_Addict">
+        <span>De_Addict</span>
       </a>
       <nav>
         <ul>
@@ -1038,16 +615,16 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-image floating">
-            <img src="1.jpg" alt="T.fly deDeejay">
+            <img src="2.png" alt="De_Addict">  <!-- using artist image placeholder -->
           </div>
           <div class="hero-text">
-            <h1>T.fly deDeejay</h1>
+            <h1>De_Addict</h1>
             <p>
-            A dynamic DJ and producer specializing in Progressive House and Afro House, crafting hypnotic grooves that blend deep rhythms with soulful, dance-driven energy. His sound is a fusion of rich African influences and modern electronic production, designed to move both bodies and minds.
+              Deep House & Deep Tech producer/DJ. Hypnotic grooves, rolling basslines, and immersive soundscapes – a fusion of underground electronic textures and soulful depth.
+            </p>
             <div>
               <a href="#" class="btn btn-primary" onclick="showPage('bookings')">Bookings</a>
               <a href="#" class="btn btn-outline" onclick="showPage('music')">Listen Now</a>
-              <a href="#" class="btn btn-outline" onclick="showPage('about')">About</a>
             </div>
           </div>
         </div>
@@ -1059,14 +636,14 @@
         <h2 class="section-title">Latest Release</h2>
         
         <div class="release-card">
-          <img src="3.png" alt="From Street To The World EP" class="release-image">
+          <img src="5.png" alt="From The Archives EP" class="release-image"> <!-- using appropriate placeholder -->
           <div class="release-info">
-            <h3 class="release-title">From Street To The World EP</h3>
+            <h3 class="release-title">From The Archives EP</h3>
             <p class="release-description">
-             From The Street To The World is more than a title; its the mission statement for T.fly deDeejay's powerful new EP. This collection of tracks charts a course from the foundational, dusty rhythms of the street—where Afro House's percussive heartbeat reigns—to the vast, expansive horizons of the world stage, painted with the lush, melodic layers of Progressive House.
+              A collection of deep house and deep tech tracks unearthed from the studio vaults. Percussive grooves, warm basslines, and hypnotic atmospheres – music crafted for late-night sessions and underground floors.
             </p>
             <div class="release-links">
-              <a href="https://www.mediafire.com/file/0hyerk0iaktw1lf/T.fly_deDeejay_-_From_Street_To_The_World_EP.zip/file" class="btn btn-primary" target="_blank">Download Album</a>
+              <a href="https://www.mediafire.com/file/vclkulaq76ihzzj/I%2527M_MusiQ_%2526_De_Addict_-_From_The_Archives_EP.zip/file" class="btn btn-primary" target="_blank">Download EP</a>
               <a href="#" class="btn btn-outline" onclick="showPage('music')">More Music</a>
             </div>
           </div>
@@ -1076,28 +653,18 @@
 
     <section class="nlm-family">
       <div class="container">
-        <h2>WE ARE NLM FAMILY</h2>
-        <p>
-          NLM Music Group Africa was founded in 2025 by visionary music entrepreneur <strong>Ailwei Maduna Wa Malada</strong>, who named the label after his mother, <strong>Ntampose Lettia Maduna</strong>.
-        </p>
-        
+        <h2>NLM FAMILY</h2>
         <div class="mother-tribute floating">
           <img src="6.png" alt="Ntampose Lettia Maduna">
-          <div class="mother-tribute-content">
+          <div>
             <p>Ntampose Lettia Maduna</p>
             <div class="title">Inspiring Force Behind NLM Music Group Africa</div>
           </div>
         </div>
-        
-        <div class="family-members">
-          <div class="family-member">
-            <img src="ar.png" alt="Founder">
-            <h3>Founder</h3>
-            <p>Ailwei Maduna Wa Malada</p>
-          </div>
-        </div>
-        
-        <a href="https://www.nlmmusicgroupafrica.co.za/#home" class="btn btn-primary" style="margin-top: 40px;" target="_blank">Learn More</a>
+        <p style="max-width:700px; margin:20px auto; color:var(--light-text);">
+          De_Addict is proudly signed to NLM Music Group Africa, founded by Ailwei Maduna Wa Malada.
+        </p>
+        <a href="https://www.nlmmusicgroupafrica.co.za/" class="btn btn-outline" target="_blank">Visit Label</a>
       </div>
     </section>
   </div>
@@ -1108,42 +675,21 @@
       <div class="container">
         <h2 class="section-title">Music</h2>
         
-        <div class="music-platforms">
-          <div class="platform-card">
-            <i class="fab fa-spotify platform-icon"></i>
-            <h3 class="platform-name">Spotify</h3>
-            <a href="https://open.spotify.com/artist/0lVQM0Rn1zO4tqXeQlnSSA?si=ZwGVVzF8R3W61zIhj_28NA" class="platform-btn" target="_blank">Listen</a>
-          </div>
-          
-          <div class="platform-card">
-            <i class="fab fa-apple platform-icon"></i>
-            <h3 class="platform-name">Apple Music</h3>
-            <a href="https://music.apple.com/us/artist/t-fly-dedeejay/1794476063" class="platform-btn" target="_blank">Listen</a>
-          </div>
-          
-          <div class="platform-card">
-            <i class="fas fa-compact-disc platform-icon"></i>
-            <h3 class="platform-name">Beatport</h3>
-            <a href="To Be Confirmed" class="platform-btn" target="_blank">Listen</a>
-          </div>
-          
-          <div class="platform-card">
-            <i class="fas fa-music platform-icon"></i>
-            <h3 class="platform-name">Traxsource</h3>
-            <a href="https://www.traxsource.com/artist/972163/t-fly-dedeejay" class="platform-btn" target="_blank">Listen</a>
+        <div class="release-card">
+          <img src="5.png" alt="From The Archives EP" class="release-image">
+          <div class="release-info">
+            <h3 class="release-title">From The Archives EP</h3>
+            <p class="release-description">
+              Deep House / Deep Tech. Four tracks of hypnotic rhythm: "Lost Tape", "Basement Groove", "Submerged", "After Hours". Released on NLM Music Group Africa.
+            </p>
+            <div class="release-links">
+              <a href="https://www.mediafire.com/file/vclkulaq76ihzzj/I%2527M_MusiQ_%2526_De_Addict_-_From_The_Archives_EP.zip/file" class="btn btn-primary" target="_blank">Download EP</a>
+            </div>
           </div>
         </div>
         
-        <div class="release-card">
-          <img src="3.png" alt="From The World To The World" class="release-image">
-          <div class="release-info">
-            <h3 class="release-title">From The World To The World</h3>
-            <p class="release-description">
-             A dynamic DJ and producer specializing in Progressive House and Afro House, crafting hypnotic grooves that blend deep rhythms with soulful, dance-driven energy. His sound is a fusion of rich African influences and modern electronic production, designed to move both bodies and minds
-            <div class="release-links">
-              <a href="https://www.mediafire.com/file/0hyerk0iaktw1lf/T.fly_deDeejay_-_From_Street_To_The_World_EP.zip/file" class="btn btn-primary" target="_blank">Download Album</a>
-            </div>
-          </div>
+        <div style="text-align: center; margin-top:40px;">
+          <p style="color:var(--light-text);">More releases coming soon. Stay tuned.</p>
         </div>
       </div>
     </section>
@@ -1157,36 +703,35 @@
         
         <div class="about-container">
           <div class="about-card floating">
-            <img src="1.jpg" alt="T.fly deDeejay">
-            <h3>T.fly deDeejay</h3>
-            <p>Genre-blending Electronic Artist</p>
+            <img src="2.png" alt="De_Addict">
+            <h3>De_Addict</h3>
+            <p>Deep House / Deep Tech Producer & DJ</p>
           </div>
-          
           <div class="about-card floating">
-            <img src="2.png" alt="NLM Music Group">
-            <h3>NLM Music Group Africa</h3>
+            <img src="ar.png" alt="NLM Music Group">
+            <h3>NLM Music Group</h3>
             <p>African Electronic Music Label</p>
           </div>
         </div>
         
-        <div style="max-width: 800px; margin: 60px auto 0; background: var(--card-bg); padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); border: 1px solid var(--border);">
-          <h3 style="text-align: center; margin-bottom: 20px; color: var(--accent);">Our Story</h3>
+        <div style="max-width: 800px; margin: 60px auto 0; background: var(--card-bg); padding: 40px; border-radius: 15px; border: 1px solid var(--border);">
+          <h3 style="text-align: center; margin-bottom: 20px; color: var(--accent);">Biography</h3>
           <p style="color: var(--light-text); line-height: 1.8; text-align: center;">
-            T.fly deDeejay is a pioneering electronic music artist who fuses African rhythms with cutting-edge EDM production. Signed to NLM Music Group Africa, a label founded in 2025 by Ailwei Maduna Wa Malada in honor of his mother, Ntampose Lettia Maduna. Together, we're pushing the boundaries of African electronic music and bringing its unique sound to the global stage.
+            De_Addict is a deep house and deep tech artist known for hypnotic grooves, rolling basslines, and immersive atmospheres. His sound draws from underground electronic textures, blending soulful depth with raw, rhythmic energy. Signed to NLM Music Group Africa, he continues to push the boundaries of African-influenced electronic music.
           </p>
         </div>
       </div>
     </section>
   </div>
 
-  <!-- Bookings Page -->
+  <!-- Bookings Page (with written email & phone) -->
   <div id="bookings" class="page-content">
     <section class="section">
       <div class="container">
         <h2 class="section-title">Bookings & Contact</h2>
-        <div style="max-width: 600px; margin: 0 auto; text-align: center; background: var(--card-bg); padding: 40px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.2); border: 1px solid var(--border); backdrop-filter: blur(10px);">
+        <div style="max-width: 600px; margin: 0 auto; text-align: center; background: var(--card-bg); padding: 40px; border-radius: 15px; border: 1px solid var(--border);">
           <p style="margin-bottom: 30px; color: var(--light-text);">
-            For bookings, collaborations, or general inquiries, reach out to us through any of these channels:
+            For bookings, collaborations, or inquiries:
           </p>
           
           <div class="contact-icons">
@@ -1194,22 +739,26 @@
               <a href="mailto:officialnlmmusicgroupafrica@gmail.com" target="_blank">
                 <i class="far fa-envelope"></i>
               </a>
-              <span>Email Us</span>
+              <span>Email</span>
             </div>
-            
             <div class="contact-icon">
               <a href="https://wa.me/0813398293" target="_blank">
                 <i class="fab fa-whatsapp"></i>
               </a>
               <span>WhatsApp</span>
             </div>
-            
             <div class="contact-icon">
               <a href="tel:0813398293" target="_blank">
                 <i class="fas fa-phone"></i>
               </a>
-              <span>Call Us</span>
+              <span>Call</span>
             </div>
+          </div>
+          
+          <!-- Written contact details -->
+          <div class="contact-details">
+            <p><i class="far fa-envelope"></i> officialnlmmusicgroupafrica@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i> 0813398293</p>
           </div>
         </div>
       </div>
@@ -1226,65 +775,41 @@
       </div>
       
       <div class="icon-only">
-        <a href="To Be Confirmed" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="To Be Confirmed" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="https://youtube.com/@tflydedeejay?si=7bpsUeSq8z2jbVfN" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://open.spotify.com/artist/0lVQM0Rn1zO4tqXeQlnSSA?si=ZwGVVzF8R3W61zIhj_28NA" target="_blank"><i class="fab fa-spotify"></i></a>
-        <a href="https://music.apple.com/us/artist/t-fly-dedeejay/1794476063" target="_blank"><i class="fab fa-apple"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-spotify"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-apple"></i></a>
       </div>
       
-      <p style="margin-top: 30px; color: var(--light-text); font-size: 0.8rem;">
-        &copy; 2025 T.fly deDeejay & NLM Music Group Africa. All rights reserved.
+      <!-- MWM Technologies credit -->
+      <div class="mwm-credit">
+        Created By <a href="https://www.mwmtechnologies.co.za/" target="_blank">MWM Technologies</a>
+      </div>
+      
+      <p style="margin-top: 20px; color: var(--light-text); font-size: 0.8rem;">
+        &copy; 2025 De_Addict & NLM Music Group Africa. All rights reserved.
       </p>
     </div>
   </footer>
 
   <script>
-    // Function to show the selected page and hide others
     function showPage(pageId) {
-      // Hide all pages
-      document.querySelectorAll('.page-content').forEach(page => {
-        page.classList.remove('active');
-      });
-      
-      // Show the selected page
+      document.querySelectorAll('.page-content').forEach(page => page.classList.remove('active'));
       document.getElementById(pageId).classList.add('active');
-      
-      // Scroll to top
       window.scrollTo(0, 0);
-      
-      // Update URL hash
       window.location.hash = pageId;
     }
     
-    // Check URL hash on page load
     window.addEventListener('DOMContentLoaded', function() {
       const hash = window.location.hash.substring(1);
-      if (hash && document.getElementById(hash)) {
-        showPage(hash);
-      } else {
-        showPage('home');
-      }
+      if (hash && document.getElementById(hash)) showPage(hash);
+      else showPage('home');
     });
 
-    // Header scroll effect
     window.addEventListener('scroll', function() {
       const header = document.querySelector('header');
-      if (window.scrollY > 100) {
-        header.style.padding = '10px 0';
-        header.style.boxShadow = '0 5px 15px rgba(0,0,0,0.3)';
-      } else {
-        header.style.padding = '15px 0';
-        header.style.boxShadow = 'none';
-      }
-    });
-
-    // Add floating animation to multiple elements
-    document.addEventListener('DOMContentLoaded', function() {
-      const floatingElements = document.querySelectorAll('.floating');
-      floatingElements.forEach((el, index) => {
-        el.style.animationDelay = `${index * 0.2}s`;
-      });
+      header.style.padding = window.scrollY > 100 ? '10px 0' : '15px 0';
     });
   </script>
 </body>
